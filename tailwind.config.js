@@ -1,10 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      margin: {
-        320: "320px",
-      },
       width: {
         150: "150px",
         190: "190px",
@@ -29,6 +27,7 @@ module.exports = {
         420: "420px",
         510: "510px",
         600: "600px",
+        650: "650px",
         685: "685px",
         800: "800px",
         "90vh": "90vh",
@@ -38,16 +37,6 @@ module.exports = {
         350: "350px",
         620: "620px",
       },
-      colors: {
-        textColor: "#101010",
-        activeText: "#D6230A",
-        gradientBg: "rgba(116, 249, 105,0.4)",
-        whiteAlpha: "rgba(255,255,255,0.2)",
-        cardColor: "#f5f5f5",
-        cartBg: "#282a2c",
-        cartItem: "#2e3033",
-        cartTotal: "#343739",
-      },
       screens: {
         sm: "640px",
         md: "768px",
@@ -55,7 +44,19 @@ module.exports = {
         xl: "1280px",
         "2xl": "1536px",
       },
+      colors: {
+        headingColor: "#2e2e2e",
+        textColor: "#515151",
+        cartNumBg: "#e80013",
+        primary: "#f5f3f3",
+        cardOverlay: "rgba(256,256,256,0.4)",
+        lighttextGray: "#9ca0ab",
+        card: "rgba(256,256,256,0.8)",
+        cartBg: "#282a2c",
+        cartItem: "#2e3033",
+        cartTotal: "#343739",
+      },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [],
 };
