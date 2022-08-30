@@ -25,14 +25,16 @@ const App = () => {
   return (
     <AnimatePresence>
       <div className="w-screen h-auto flex flex-col bg-primary ">
-        <Header />
+          <Header />
+        <div className="max-w-[1440px] mx-auto">
 
-        <main className="mt-14 md:mt-20 md:px-16 px-4 py-4 w-full">
-          <Routes>
-            <Route path="/*" element={<MainContiner />} />
-            <Route path="/createItem" element={<CreateContainer />} />
-          </Routes>
-        </main>
+          <main className="mt-14 md:mt-20 md:px-16 px-4 py-4 w-full">
+            <Routes>
+              <Route path="/*" element={<MainContiner />} />
+              <Route path="/createItem" element={<CreateContainer />} />
+            </Routes>
+          </main>
+        </div>
       </div>
     </AnimatePresence>
   );

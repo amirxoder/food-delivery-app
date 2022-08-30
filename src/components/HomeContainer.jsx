@@ -54,14 +54,14 @@ const HomeContainer = () => {
         />
 
         <div
-          className="w-full h-full flex items-center justify-center gap-4
-         select-none absolute md:top-0 md:left-0  top-12 flex-wrap lg:px-32"
+          className="md:w-[50rem] w-full h-full flex items-center justify-center gap-4
+         select-none absolute md:top-0 md:left-0  top- flex-wrap lg:px-32"
         >
           {heroData &&
             heroData.map((item) => (
               <div
                 key={item.id}
-                className="w-190 min-w-[190px] p-4 drop-shadow-lg
+                className="w-120 min-w-[120px] p-4 drop-shadow-lg
                  bg-cardOverlay backdrop-blur-[5px] rounded-3xl flex items-center
                   justify-center flex-col"
               >
